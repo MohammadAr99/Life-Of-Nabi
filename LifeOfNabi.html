@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Life of Nabi</title>
+<style>
+
+*{
+ margin: 0;
+ padding: 0;
+
+ }
+ 
+body{
+background-color: white;
+  
+}
+
+/*-----------------
+   Loader Works
+--------------------*/
+#myLoader{
+height: 80px;
+width: 80px;
+border-radius: 100%;
+border-top: 7px solid purple;
+border-bottom: 7px solid purple;
+border-left: 7px solid white;
+border-right: 7px solid white;
+animation-name: Hb;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-delay:1s;
+margin-top: 50%;
+margin-left: 30%;
+
+}
+
+@keyframes Hb{
+0%{
+transform: rotate(30deg);
+   }
+25%{
+transform: rotate(120deg);
+  }
+  
+50%{
+  transform: rotate(180deg);
+  }
+  
+75%{
+  transform: rotate(260deg);
+  }
+100%{
+  transform: rotate(320deg);
+  }
+   
+ }
+ 
+ 
+/*-----------------
+  Loader Works End
+--------------------*/
+ 
+.Main_Card{
+ background-image: radial-gradient(purple 10%, blue 30%, green 10%, black, whitesmoke);
+ height: 485px;
+ width: 100%;
+ overflow: auto;
+  
+ }
+ 
+ 
+ .List_Items{
+  height: 50px;
+  width: 80%;
+  background: rgba(180,120,99,0.2);
+  border: 1px solid skyblue;
+  color: skyblue;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-left: 10%;
+  margin-bottom: 8px;
+  
+ 
+  }
+ 
+ .List_Items:hover{
+  border: 1px solid grey;
+ 
+ }
+ 
+ .Subject_Of_Nabi{
+  background-image: radial-gradient(purple 10%, blue 30%, green 10%, black, white);
+  color: white;
+  height: 485px;
+  width: 100%;
+  overflow: auto;
+  
+ }
+ 
+.Subject_Control{
+ padding: 10px 10px;
+ 
+ }
+ 
+ .Subject_Button{
+  height: 50px;
+  width: 80%;
+  background: rgba(180,120,99,0.2);
+  border: none;
+  border-top: 1px solid tomato;
+  border-bottom: 1px solid skyblue;
+  border-left: 5px solid skyblue;
+  border-right: 5px solid tomato;
+  color: skyblue;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-left: 10%;
+  margin-bottom: 8px;
+  
+  }
+ 
+ .Back_Btn{
+  position: fixed;
+  
+ }
+ 
+ 
+</style>
+</head>
+<body onload="MyLoad()">
+<div id="myLoader"></div>
+<div style="display:none;" id="showDiv">
+
+ <!--First Step Coding-->
+<div class="Main_Card">
+ <button onclick="AdamNabi()" class="List_Items">হযরত আদম (আঃ)</button>
+ <button class="List_Items">হজরত নুহ (আঃ)</button>
+ <button class="List_Items">ইদরীস (আঃ)</button>
+ <button class="List_Items">হূদ (আঃ)</button>
+ <button class="List_Items">সালেহ (আঃ)</button>
+ <button class="List_Items">ইবরাহিম (আঃ)</button>
+ 
+ <button class="List_Items">লুত (আঃ)</button>
+ <button class="List_Items">ইসমাঈল (আঃ)</button>
+ <button class="List_Items">ইসহাক (আঃ)</button>
+ <button class="List_Items">ইয়াকুব (আঃ)</button>
+ <button class="List_Items">ইউসুফ (আঃ)</button>
+ 
+ <button class="List_Items">শোয়াইব (আঃ)</button>
+ <button class="List_Items">আইয়ুব (আঃ)</button>
+ <button class="List_Items">যুলকিফল (আঃ)</button>
+ <button class="List_Items">মুসা (আঃ)</button>
+ <button class="List_Items">হারূণ (আঃ) </button>
+ 
+ <button class="List_Items">দাঊদ (আঃ)</button>
+ <button class="List_Items">সুলায়মান (আঃ)</button>
+ <button class="List_Items">ইলিয়াস (আঃ)</button>
+ <button class="List_Items">আল ইয়াসা (আঃ)</button>
+ <button class="List_Items">ইউনুস (আঃ)</button>
+ 
+ <button class="List_Items">যাকারিয়া ও ইয়াহইয়া (আঃ)</button>
+ <button class="List_Items">যাকারিয়া (আঃ) </button>
+ <button class="List_Items">হযরত ঈসা (আঃ)</button>
+ <button class="List_Items">মুহাম্মাদ (সাঃ)</button>
+ <button class="List_Items"></button>
+ <button class="List_Items"></button>
+</div>
+<!--...First Step Coding End...-->
+
+
+<div class="Subject_Of_Nabi Adam" style="display: none;">
+<input type="button" value="back" class="Back_Btn">
+<div class="Subject_Control">
+<button class="Subject_Button" onclick="">হযরত আদম (আলাইহিস সালাম)</button>
+<button class="Subject_Button" onclick="">শয়তানের সৃষ্টি ছিল মানুষের জন্য পরীক্ষা স্বরূপ</button>
+<button class="Subject_Button" onclick="">আদম সৃষ্টির কাহিনী</button>
+<button class="Subject_Button" onclick="">খলীফা অর্থ</button>
+<button class="Subject_Button" onclick="">সিজদার ব্যাখ্যা ও উদ্দেশ্য</button>
+<button class="Subject_Button" onclick="">আদমের পাঁচটি শ্রেষ্ঠত্ব</button>
+<button class="Subject_Button" onclick="">নারী জাতি পুরুষেরই অংশ এবং তার অনুগত</button>
+<button class="Subject_Button" onclick="">নগ্নতা শয়তানের প্রথম কাজ</button>
+<button class="Subject_Button" onclick="">মানব সৃষ্টির রহস্য</button>
+<button class="Subject_Button" onclick="">জান্নাত থেকে পতিত হবার পর</button>
+<button class="Subject_Button" onclick="">আদমের অবতরণ স্থল</button>
+<button class="Subject_Button" onclick="">আহ্দে আলাস্তু-র উদ্দেশ্য</button>
+<button class="Subject_Button" onclick="">আহ্দে আলাস্তু-র বিবরণ</button>
+<button class="Subject_Button" onclick="">অন্যান্য অঙ্গীকার গ্রহণ</button>
+<button class="Subject_Button" onclick="">আদমের মর্যাদা ও শ্রেষ্ঠত্ব</button>
+<button class="Subject_Button" onclick="">দুনিয়াবী ব্যবস্থাপনায় আদম (আঃ)</button>
+<button class="Subject_Button" onclick="">আদম পুত্রদ্বয়ের কাহিনী</button>
+<button class="Subject_Button" onclick="">হত্যাকান্ডের কারণ</button>
+<button class="Subject_Button" onclick="">শিক্ষণীয় বিষয়</button>
+<button class="Subject_Button" onclick="">মৃত্যু ও বয়স</button>
+<button class="Subject_Button" onclick="">আদম (আঃ)-এর জীবনী থেকে শিক্ষণীয় বিষয় সমূহ</button>
+<button class="Subject_Button" onclick=""></button>
+</div>
+</div>
+
+
+
+<!--...Second Step Coding...-->
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<div class="Subject_Of_Nabi" style="display: none;">
+<div class="Subject_Control"></div>
+</div>
+
+<!--...Second Step Coding End...-->
+
+</div>
+
+<script>
+
+var Time = setTimeout(function MyLoad(){
+var Show = document.getElementById("showDiv").style.display="block";
+var Hide = document.getElementById("myLoader").style.display="none";
+
+ },0100);
+
+
+ function AdamNabi(){
+  var Adam = document.querySelector(".Adam");
+      Adam.style.display="block";
+  
+  var MainCard = document.querySelector(".Main_Card");
+      MainCard.style.display="none";
+  
+ }
+ 
+ var BackBtn = document.querySelector(".Back_Btn");
+     BackBtn.addEventListener("click", function(){
+     
+     var Adam = document.querySelector(".Adam");
+     Adam.style.display="none";
+     
+     var MainCard = document.querySelector(".Main_Card");
+     MainCard.style.display="block";
+     
+     });
+    
+</script>
+
+</body>
+</html>
